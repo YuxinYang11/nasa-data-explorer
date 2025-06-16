@@ -10,7 +10,7 @@ export default function ApodViewer() {
 
   const fetchData = d => {
     setLoading(true);
-    axios.get("/api/apod", { params: { date: d } })
+    axios.get("https://nasa-data-explorer-3epe.onrender.com", { params: { date: d } })
       .then(res => setData(res.data))
       .finally(() => setLoading(false));
   };
@@ -21,7 +21,7 @@ export default function ApodViewer() {
     setAILoading(true);
     setAISummary('');
     try {
-      const resp = await axios.post("/api/ai/apod-summary", { text: data.explanation });
+      const resp = await axios.post("https://nasa-data-explorer-3epe.onrender.com", { text: data.explanation });
       setAISummary(resp.data.summary);
     } catch (e) {
       setAISummary("AI summarization failed. Try again later.");
