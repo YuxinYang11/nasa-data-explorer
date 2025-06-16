@@ -8,7 +8,7 @@ export default function MarsViewer() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get("https://nasa-data-explorer-3epe.onrender.com", { params: { earth_date: date } })
+    axios.get("https://nasa-data-explorer-3epe.onrender.com/api/mars", { params: { earth_date: date } })
       .then(res => setPhotos(res.data))
       .finally(() => setLoading(false));
   }, [date]);
