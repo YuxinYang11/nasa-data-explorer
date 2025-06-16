@@ -1,7 +1,7 @@
-NASA Data Explorer
+#NASA Data Explorer
 A full-stack web application that explores and visualizes spatially relevant data from the NASA Open API, with interactive charts and AI-driven summaries.
 
-Features:
+##Features:
 Browse NASA Astronomical Picture of the Day (APOD) 
 View and analyze Mars Rover photos (date picker, camera stats pie charts) 
 Explore Near-Earth Objects Trends (visualization) 
@@ -10,10 +10,10 @@ Powerful error/load state management
 AI summary powered by OpenAI 
 Full Stack Testing (Jest + Supertest + React Test Library)
 
-Sturucture:
+##Sturucture:
 nasa-data-explorer/
-├── frontend/      # React (client)
-├── backend/       # Express (server)
+├── frontend/      # React (client)/
+├── backend/       # Express (server)/
 │   ├── routes/
 │   ├── services/
 │   ├── tests/
@@ -21,7 +21,7 @@ nasa-data-explorer/
 ├── README.md
 └── .gitignore
 
-Local Deployment:
+##Local Deployment:
 1. git clone  
     git clone https://github.com/YuxinYang11/nasa-data-explorer.git
     cd nasa-data-explorer
