@@ -6,7 +6,7 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#B49CFC", "#FF69B4"
 export default function MarsPhotoPie({ date }) {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("https://nasa-data-explorer-3epe.onrender.com", { params: { earth_date: date } })
+    axios.get("https://nasa-data-explorer-3epe.onrender.com/api/mars", { params: { earth_date: date } })
       .then(res => {
         const list = res.data;
         const cameraCount = {};
