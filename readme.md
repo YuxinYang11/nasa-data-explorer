@@ -19,6 +19,15 @@ A full-stack web application that explores and visualizes spatially relevant dat
 ```text
 nasa-data-explorer/
 ├── frontend/      # React (client)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ApodViewer.js        # Astronomy Picture of the Day (APOD) viewer
+│   │   │   ├── MarsViewer.js        # Mars Rover photo gallery (with date)
+│   │   │   ├── MarsPhotoPie.js      # pie chart
+│   │   │   ├── NeoChart.js          # NEO
+│   │   │   ├── NeoTrendChart.js     # NEO  line chart
+│   │   │   ├── SearchImages.js      # NASA image library search 
+│   │   ├── App.js
 ├── backend/       # Express (server)
 │   ├── routes/
 │   ├── services/
