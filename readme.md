@@ -26,7 +26,7 @@ nasa-data-explorer/
 │   └── .env         # not committed
 ├── README.md
 └── .gitignore
-
+```
 ## Local Deployment:
 
 1. **Clone the repo**
