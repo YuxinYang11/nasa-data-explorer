@@ -37,7 +37,7 @@ nasa-data-explorer/
 └── .gitignore
 ```
 ## Local Deployment:
-
+For cloud deployment, all APIs have been changed, so if you switch local deployment, please modify the proxy of the front-end package.json file http://localhost:5000 and remove all links in "axios" in all components.
 1. **Clone the repo**
     ```bash
     git clone https://github.com/YuxinYang11/nasa-data-explorer.git
