@@ -14,7 +14,7 @@ export default function NeoTrendChart() {
   useEffect(() => {
     setLoading(true);
     setError("");
-    axios.get("https://nasa-data-explorer-3epe.onrender.com", { params: { start_date: start, end_date: end } })
+    axios.get("https://nasa-data-explorer-3epe.onrender.com/api/neo", { params: { start_date: start, end_date: end } })
       .then(res => {
         const obj = res.data.near_earth_objects;
         // obj 
