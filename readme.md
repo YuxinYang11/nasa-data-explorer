@@ -14,7 +14,7 @@ A full-stack web application that explores and visualizes spatially relevant dat
 - **AI summary powered by OpenAI**
 - **Full Stack Testing** (Jest + Supertest + React Testing Library)
 
-##Sturucture:
+##  Sturucture:
 
 nasa-data-explorer/
 ├── frontend/      # React (client)
@@ -26,7 +26,7 @@ nasa-data-explorer/
 ├── README.md
 └── .gitignore
 
-##Local Deployment:
+## Local Deployment:
 
 1. **Clone the repo**
     ```bash
