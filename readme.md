@@ -16,13 +16,14 @@ A full-stack web application that explores and visualizes spatially relevant dat
 
 ##  Sturucture:
 
+```text
 nasa-data-explorer/
 ├── frontend/      # React (client)
 ├── backend/       # Express (server)
 │   ├── routes/
 │   ├── services/
 │   ├── tests/
-│   └── .env 
+│   └── .env         # not committed
 ├── README.md
 └── .gitignore
 
@@ -35,10 +36,10 @@ nasa-data-explorer/
     ```
 
 2. **Configure the API keys**
-    - In `backend/.env` (do **not** commit this file!):
+    - In `backend/.env`
         ```
         NASA_API_KEY=YOUR_NASA_KEY
-        OPENAI_API_KEY=YOUR_OpenAI_KEY   # (Optional, for AI features)
+        OPENAI_API_KEY=YOUR_OpenAI_KEY 
         ```
 
 3. **Install dependencies**
