@@ -12,7 +12,7 @@ A full-stack web application that explores and visualizes spatially relevant dat
 - **Responsive, user-friendly interface**
 - **Powerful error/load state management**
 - **AI summary powered by OpenAI**
-- **Full Stack Testing** (Jest + Supertest + React Testing Library)
+- **Full Stack Testing**
 
 ##  Sturucture:
 
