@@ -7,7 +7,7 @@ export default function NeoChart() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("https://nasa-data-explorer-3epe.onrender.com")
+    axios.get("https://nasa-data-explorer-3epe.onrender.com/api/neo")
       .then(res => {
         const list = res.data;
         const chartData = list.map(obj => ({
