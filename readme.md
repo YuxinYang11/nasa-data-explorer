@@ -1,7 +1,7 @@
 #  NASA Data Explorer
 
 A full-stack web application that explores and visualizes spatially relevant data from the NASA Open API, with interactive charts and AI-driven summaries.
-
+Available at  https://nasa-data-explorer-6f16.vercel.app
 ---
 
 ##  Features
