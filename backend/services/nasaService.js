@@ -3,11 +3,13 @@ const axios = require('axios');
 const BASE = 'https://api.nasa.gov';
 const KEY = process.env.NASA_API_KEY;
 
-async function fetchAPOD() {
-  const url = `${BASE}/planetary/apod?api_key=${KEY}`;
+async function fetchAPOD(date) {
+  let url = `${BASE}/planetary/apod?api_key=${KEY}`;
+  if (date) url += `&date=${date}`;
   const { data } = await axios.get(url);
   return data;
 }
+
 
 async function fetchMarsPhotos(earth_date) {
   const url = `${BASE}/mars-photos/api/v1/rovers/curiosity/photos`;
