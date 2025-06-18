@@ -5,7 +5,8 @@ const router = express.Router();
 
 router.get('/apod', async (req, res) => {
   try {
-    const data = await fetchAPOD();
+    const { date } = req.query;             
+    const data = await fetchAPOD(date);
     res.json(data);
   } catch (e) {
     res.status(500).json({ error: e.message });
